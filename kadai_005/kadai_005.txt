@@ -1,0 +1,48 @@
+juny@chejunhinoMacBook-Air git_challenge % git add hello_wolrd.txt
+fatal: pathspec 'hello_wolrd.txt' did not match any files
+juny@chejunhinoMacBook-Air git_challenge % git add hello_world.txt
+juny@chejunhinoMacBook-Air git_challenge % git commit -m "first commit"
+[main 8430d63] first commit
+ Committer: チェジュンヒ <juny@chejunhinoMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ delete mode 100644 hello_wolrd.txt
+ create mode 100644 hello_world.txt
+juny@chejunhinoMacBook-Air git_challenge % git add hello_world.txt
+juny@chejunhinoMacBook-Air git_challenge % git commit -m "second commit"
+[main c67006c] second commit
+ Committer: チェジュンヒ <juny@chejunhinoMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+juny@chejunhinoMacBook-Air git_challenge % git log --one line
+fatal: ambiguous argument 'line': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+juny@chejunhinoMacBook-Air git_challenge % git log --oneline
+c67006c (HEAD -> main) second commit
+8430d63 first commit
+1956c11 second commit
+a940e63 first commit
+juny@chejunhinoMacBook-Air git_challenge % 
