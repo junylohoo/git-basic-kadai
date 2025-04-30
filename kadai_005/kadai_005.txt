@@ -1,0 +1,64 @@
+juny@chejunhinoMacBook-Air ~ % mkdir git_challenge
+juny@chejunhinoMacBook-Air ~ % cd git_challenge
+juny@chejunhinoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/juny/git_challenge/.git/
+juny@chejunhinoMacBook-Air git_challenge % git add hello_wolrd.txt
+juny@chejunhinoMacBook-Air git_challenge % git commit -m "first commit"
+[main (root-commit) a940e63] first commit
+ Committer: チェジュンヒ <juny@chejunhinoMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_wolrd.txt
+juny@chejunhinoMacBook-Air git_challenge % git commit -m "second commit"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_wolrd.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+juny@chejunhinoMacBook-Air git_challenge % git add hello_wolrd.txt
+juny@chejunhinoMacBook-Air git_challenge % git commit -m "second commit"
+[main 1956c11] second commit
+ Committer: チェジュンヒ <juny@chejunhinoMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+juny@chejunhinoMacBook-Air git_challenge % git log
+commit 1956c110f33ba9f4575d0a8c34eaab95c2201ebd (HEAD -> main)
+Author: チェジュンヒ <juny@chejunhinoMacBook-Air.local>
+Date:   Wed Apr 30 13:31:25 2025 +0900
+
+    second commit
+
+commit a940e6387287a98c2062f2e78ff18abae4d39e77
+Author: チェジュンヒ <juny@chejunhinoMacBook-Air.local>
+Date:   Wed Apr 30 13:27:44 2025 +0900
+
+    first commit
+juny@chejunhinoMacBook-Air git_challenge % 
